@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import Image from "next/image";
 import Link from "next/link";
+import logo from "../../public/logo.svg";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -33,7 +33,7 @@ export default function RootLayout({
         <header className="border-b border-card-border">
           <div className="mx-auto max-w-5xl px-6 py-4 flex items-center justify-between">
             <Link href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
-              <Image src="/logo.svg" alt="Filecoin Onchain Cloud" width={120} height={40} priority />
+              <img src={logo.src} alt="Filecoin Onchain Cloud" width={120} height={40} />
             </Link>
             <span className="text-xs text-muted font-mono">RFS Program</span>
           </div>
